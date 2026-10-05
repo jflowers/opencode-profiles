@@ -134,6 +134,25 @@ Ask the user: "Would you like me to suggest concrete remediation edits for the t
 - **Prioritize Principle IV violations** (these are always CRITICAL)
 - **Missing coverage strategy is CRITICAL** — not HIGH, not MEDIUM
 - **Report zero issues gracefully** (emit success report with testability statistics)
+
+
+## Guardrails
+
+- **NEVER modify source code** — this command reviews
+  spec artifacts ONLY. Implementation changes belong in
+  `/speckit.implement`, `/uf.unleash`, or `/uf.cobalt-crush`.
+- **NEVER modify test files, Go source, Markdown agents,
+  convention packs, or config files** outside the
+  `specs/NNN-*/` feature directory.
+- The ONLY files this command may write are reviews
+  of spec artifacts.
+- The user needs to review the plan before
+  implementation begins. Implementing without review
+  defeats the purpose of the spec-first workflow.
+- Consult the project constitution
+  (`.specify/memory/constitution.md`) and retrieve prior
+  context via Dewey (`dewey_semantic_search`) before
+  writing spec artifacts.
 </protect>
 
 ## Context
