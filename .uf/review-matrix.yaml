@@ -6,12 +6,12 @@
 version: 3
 
 profiles:
-lightweight:
-    model: {}
+  lightweight:
+    model: openrouter/deepseek/deepseek-v4-flash
   standard:
-    model: {}
+    model: openrouter/deepseek/deepseek-v4-pro
   heavy:
-    model: {}
+    model: openrouter/x-ai/grok-4.7
 
 defaults:
   code: standard

@@ -25,3 +25,5 @@
 .muti-mind/
 .mx-f/
 replicator.log
+node_modules
+dist/

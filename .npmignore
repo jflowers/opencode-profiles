@@ -1,0 +1,17 @@
+# Source files excluded from the npm package
+tests/
+src/
+scripts/
+examples/
+
+# Dev config
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+.prettierrc
+.gitignore
+.npmignore
+.editorconfig
+
+# CI / GitHub
+.github/
